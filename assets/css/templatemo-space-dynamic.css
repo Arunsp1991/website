@@ -298,7 +298,7 @@ header
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #03a4ed;
+    color: #000000;
     line-height: 100px;
     float: left;
     -webkit-transition: all 0.3s ease 0s;
@@ -1023,11 +1023,11 @@ Services Style
 }
 
 .our-services .first-bar span {
-  left: 69%;
+  left: 88%;
 }
 
 .our-services .second-bar span {
-  left: 81%;
+  left: 88%;
 }
 
 .our-services .third-bar span {
@@ -1061,15 +1061,15 @@ Services Style
 }
 
 .our-services .first-bar .filled-bar {
-  width: 71%;
+  width: 100%;
 }
 
 .our-services .second-bar .filled-bar {
-  width: 83%;
+  width: 100%;
 }
 
 .our-services .third-bar .filled-bar {
-  width: 90%;
+  width: 100%;
 }
 
 
