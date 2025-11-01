@@ -985,7 +985,7 @@ About Us Style
 }
 
 .about-us .services .item .icon img {
-  max-width: 70px;
+  max-width: 90px;
 }
 
 .about-us .services .item h4 {
@@ -1001,6 +1001,7 @@ About Us Style
 
 
 
+
 /* 
 ---------------------------------------------
 Services Style
@@ -1009,7 +1010,7 @@ Services Style
 
 .our-services {
   margin-top: 0px;
-  padding-top: 120px;
+  padding-top: 20px;
 }
 
 .our-services .left-image {
@@ -1089,6 +1090,25 @@ Services Style
   width: 100%;
 }
 
+
+#services.our-services.section {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  overflow: hidden;
+}
+
+#services .container,
+#services .row,
+#services .col-lg-6 {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+@media (max-width: 992px) {
+  .our-services {
+    margin-top: 0 !important;
+  }
+}
 
 /* 
 ---------------------------------------------
@@ -1450,6 +1470,17 @@ footer p a {
   color: #fe3f40;
 }
 
+footer {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #333;
+  background: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+
 /* 
 ---------------------------------------------
 responsive
@@ -1469,7 +1500,7 @@ responsive
   .main-banner .left-content {
     margin-right: 0px;
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 5px;
   }
   .main-banner:after {
     top: 76px;
@@ -1684,9 +1715,13 @@ Products Section
 .services-section {
   background-color: #121212;
   color: #fff;
-  padding: 80px 20px;
+  padding: 50px 20px;
   text-align: center;
+  margin-bottom: 20px;
+  
 }
+
+
 
 .services-container {
   display: flex;
@@ -1712,8 +1747,8 @@ Products Section
 }
 
 .service-icon {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   margin-bottom: 15px;
 }
 
@@ -1750,4 +1785,11 @@ address-section1 p {
 
 address-section1 h2 {
   margin-bottom: 2px;   /* keeps small gap below heading */
+}
+
+
+.section-title h2, 
+.section-heading h2, 
+.what-we-do h2 {
+  padding-bottom: 50px; /* adjust this value as needed */
 }
