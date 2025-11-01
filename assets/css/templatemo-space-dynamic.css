@@ -1190,8 +1190,9 @@ Blog
 
 .our-blog {
   position: relative;
-  margin-top: 80px;
-  padding-top: 120px;
+  margin-top: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .our-blog .section-heading h2 {
@@ -1596,3 +1597,146 @@ responsive
   }
 }
 
+/* -------------------------------
+Products Section
+-------------------------------- */
+.products-section {
+  padding: 100px 0;
+  background-color: #111;
+  text-align: center;
+}
+
+.products-section .section-title {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns default */
+  gap: 30px;
+  justify-content: center;
+}
+
+.product-card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  background: #222;
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h4 {
+  color: #fff;
+  margin: 20px 0 10px;
+  font-size: 20px;
+}
+
+.product-card .btn {
+  display: inline-block;
+  background-color: #e91e63;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.product-card .btn:hover {
+  background-color: #ff4081;
+}
+
+/* ✅ Responsive Grid Layouts */
+@media (min-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns (3 rows = 6 cards) */
+  }
+}
+
+@media (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: repeat(1, 1fr); /* 4 columns for small screens */
+  }
+}
+
+
+/* new section for about us*/
+
+.services-section {
+  background-color: #121212;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: #1b1b1b;
+  border-radius: 12px;
+  padding: 30px 25px;
+  max-width: 280px;
+  flex: 1 1 250px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-container {
+    gap: 30px;
+  }
+
+  .service-card {
+    max-width: 100%;
+  }
+}
+
+/*new section end */
