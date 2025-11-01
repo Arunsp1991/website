@@ -1740,3 +1740,14 @@ Products Section
 }
 
 /*new section end */
+
+
+
+address-section1 p {
+  margin: 1px 0;       /* reduces vertical spacing */
+  line-height: 1.4;     /* makes lines closer together */
+}
+
+address-section1 h2 {
+  margin-bottom: 2px;   /* keeps small gap below heading */
+}
