@@ -6,6 +6,8 @@
   font-family: "Poppins", sans-serif;
 }
 
+
+
 /* Container */
 .container {
   width: 90%;
@@ -16,8 +18,13 @@
 /* Header */
 .header {
   background: #111;
-  color: white;
+  color: rgb(153, 195, 255);
   padding: 15px 0;
+}
+
+.products-section2 {
+  background: #a2b6ff;
+  padding: 60px 0;
 }
 
 .header .container {
